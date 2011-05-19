@@ -20,7 +20,7 @@ function aid_basic_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact Information',
-    'weight' => '11',
+    'weight' => '13',
     'children' => array(
       0 => 'field_profile_contact_note',
       1 => 'field_profile_email',
@@ -52,7 +52,7 @@ function aid_basic_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Personal Information',
-    'weight' => '18',
+    'weight' => '14',
     'children' => array(
       0 => 'field_profile_affiliations',
       1 => 'field_profile_awards',
@@ -84,7 +84,7 @@ function aid_basic_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Research Information',
-    'weight' => '19',
+    'weight' => '15',
     'children' => array(
       0 => 'field_profile_research',
       1 => 'field_profile_research_interests',

@@ -83,7 +83,7 @@ function aid_basic_profile_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '8',
+        'weight' => '9',
       ),
     ),
   );
@@ -836,7 +836,7 @@ function aid_basic_profile_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '9',
+        'weight' => '10',
       ),
     ),
   );
@@ -2006,7 +2006,7 @@ function aid_basic_profile_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'user_reference_autocomplete',
-        'weight' => '10',
+        'weight' => '11',
       ),
     ),
   );
