@@ -34,9 +34,9 @@ function aid_basic_project_field_default_fields() {
       'module' => 'text',
       'settings' => array(
         'field_permissions' => array(
-          'create' => 0,
-          'edit' => 0,
-          'edit own' => 0,
+          'create' => 'create',
+          'edit' => 'edit',
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),

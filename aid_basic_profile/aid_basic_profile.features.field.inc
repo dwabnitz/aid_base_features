@@ -38,7 +38,7 @@ function aid_basic_profile_field_default_fields() {
         'field_permissions' => array(
           'create' => 0,
           'edit' => 0,
-          'edit own' => 0,
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),
@@ -264,7 +264,7 @@ function aid_basic_profile_field_default_fields() {
         'field_permissions' => array(
           'create' => 0,
           'edit' => 0,
-          'edit own' => 0,
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),
@@ -415,7 +415,7 @@ function aid_basic_profile_field_default_fields() {
         'field_permissions' => array(
           'create' => 0,
           'edit' => 0,
-          'edit own' => 0,
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),
@@ -493,7 +493,7 @@ function aid_basic_profile_field_default_fields() {
         'field_permissions' => array(
           'create' => 0,
           'edit' => 0,
-          'edit own' => 0,
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),
@@ -1645,7 +1645,7 @@ function aid_basic_profile_field_default_fields() {
         'field_permissions' => array(
           'create' => 0,
           'edit' => 0,
-          'edit own' => 0,
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),
@@ -1721,7 +1721,7 @@ function aid_basic_profile_field_default_fields() {
         'field_permissions' => array(
           'create' => 0,
           'edit' => 0,
-          'edit own' => 0,
+          'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
         ),
@@ -1944,11 +1944,11 @@ function aid_basic_profile_field_default_fields() {
       'module' => 'user_reference',
       'settings' => array(
         'field_permissions' => array(
-          'create' => 0,
-          'edit' => 0,
-          'edit own' => 0,
-          'view' => 0,
-          'view own' => 0,
+          'create' => 'create',
+          'edit' => 'edit',
+          'edit own' => 'edit own',
+          'view' => 'view',
+          'view own' => 'view own',
         ),
         'referenceable_roles' => array(
           2 => '2',
