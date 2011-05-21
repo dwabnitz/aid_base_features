@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AID Basic Event feature.
+ */
+
+include_once('aid_basic_event.features.inc');

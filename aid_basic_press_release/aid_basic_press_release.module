@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AID Basic Press Release feature.
+ */
+
+include_once('aid_basic_press_release.features.inc');
