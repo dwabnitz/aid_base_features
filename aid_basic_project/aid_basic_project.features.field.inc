@@ -10,14 +10,16 @@
 function aid_basic_project_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-project-field_project_description'
-  $fields['node-project-field_project_description'] = array(
+  // Exported field: 'node-project-body'
+  $fields['node-project-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_project_description',
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'field_name' => 'body',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -34,8 +36,8 @@ function aid_basic_project_field_default_fields() {
       'module' => 'text',
       'settings' => array(
         'field_permissions' => array(
-          'create' => 'create',
-          'edit' => 'edit',
+          'create' => 0,
+          'edit' => 0,
           'edit own' => 'edit own',
           'view' => 0,
           'view own' => 0,
@@ -51,11 +53,18 @@ function aid_basic_project_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
+        'project_panel_detail' => array(
           'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 16,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -65,19 +74,18 @@ function aid_basic_project_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_project_description',
+      'field_name' => 'body',
       'label' => 'Description',
-      'required' => 0,
+      'required' => FALSE,
       'settings' => array(
         'display_summary' => 0,
-        'text_processing' => '1',
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '20',
+          'rows' => 20,
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
@@ -123,17 +131,15 @@ function aid_basic_project_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'date',
-          'settings' => array(
-            'format_type' => 'long',
-            'fromto' => 'both',
-            'multiple_from' => '',
-            'multiple_number' => '',
-            'multiple_to' => '',
-            'show_repeat_rule' => 'show',
-          ),
-          'type' => 'date_default',
-          'weight' => 35,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '17',
+        ),
+        'project_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '30',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -218,10 +224,15 @@ function aid_basic_project_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 12,
+          'type' => 'hidden',
+          'weight' => '27',
+        ),
+        'project_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -289,11 +300,18 @@ function aid_basic_project_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 29,
+          'weight' => '0',
+        ),
+        'project_panel_detail' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -365,10 +383,15 @@ function aid_basic_project_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 28,
+          'type' => 'hidden',
+          'weight' => '12',
+        ),
+        'project_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '25',
         ),
         'teaser' => array(
           'label' => 'above',
