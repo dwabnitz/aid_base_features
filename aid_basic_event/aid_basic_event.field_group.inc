@@ -51,7 +51,10 @@ function aid_basic_event_field_group_info() {
     'children' => array(
       0 => 'field_event_tags',
       1 => 'field_event_department',
-      2 => 'field_event_topics',
+      2 => 'field_event_internal',
+      3 => 'field_event_topics',
+      4 => 'field_event_research_area',
+      5 => 'field_event_category',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

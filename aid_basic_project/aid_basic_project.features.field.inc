@@ -114,6 +114,8 @@ function aid_basic_project_field_default_fields() {
           'view own' => 0,
         ),
         'granularity' => array(
+          'day' => 'day',
+          'month' => 'month',
           'year' => 'year',
         ),
         'repeat' => 0,
@@ -122,24 +124,26 @@ function aid_basic_project_field_default_fields() {
         'tz_handling' => 'none',
       ),
       'translatable' => '1',
-      'type' => 'datetime',
+      'type' => 'date',
     ),
     'field_instance' => array(
       'bundle' => 'project',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Enter the duration of the project',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '17',
-        ),
-        'project_panel_detail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '30',
+          'label' => 'inline',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_year_only',
+          'weight' => '31',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -150,10 +154,10 @@ function aid_basic_project_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_project_duration',
-      'label' => 'Project Duration',
+      'label' => 'Duration',
       'required' => 0,
       'settings' => array(
-        'default_format' => 'short',
+        'default_format' => 'year_only',
         'default_value' => 'blank',
         'default_value2' => 'blank',
         'default_value_code' => '',
@@ -423,9 +427,10 @@ function aid_basic_project_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Description');
+  t('Duration');
+  t('Enter the duration of the project');
   t('Full Title');
   t('Max. 120 characters. The title of the web page will be generated automatically from the short title which is therefore required.');
-  t('Project Duration');
   t('Short Title');
   t('Status');
 

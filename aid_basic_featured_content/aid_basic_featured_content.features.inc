@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * aid_basic_media_coverage.features.inc
+ * aid_basic_featured_content.features.inc
  */
 
 /**
  * Implementation of hook_ctools_plugin_api().
  */
-function aid_basic_media_coverage_ctools_plugin_api() {
+function aid_basic_featured_content_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
@@ -17,12 +17,12 @@ function aid_basic_media_coverage_ctools_plugin_api() {
 /**
  * Implementation of hook_node_info().
  */
-function aid_basic_media_coverage_node_info() {
+function aid_basic_featured_content_node_info() {
   $items = array(
-    'media_coverage' => array(
-      'name' => t('Media Coverage'),
+    'featured_content' => array(
+      'name' => t('Featured Content'),
       'base' => 'node_content',
-      'description' => t('Use for media coverage about your organization.'),
+      'description' => t('Featured content for prominent display, e.g. in the main carousel atop the home page.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
