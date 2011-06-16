@@ -36,11 +36,11 @@ function aid_basic_research_program_field_default_fields() {
       'module' => 'text',
       'settings' => array(
         'field_permissions' => array(
-          'create' => 0,
-          'edit' => 0,
+          'create' => 'create',
+          'edit' => 'edit',
           'edit own' => 'edit own',
-          'view' => 0,
-          'view own' => 0,
+          'view' => 'view',
+          'view own' => 'view own',
         ),
       ),
       'translatable' => '1',
@@ -117,11 +117,11 @@ function aid_basic_research_program_field_default_fields() {
       'module' => 'text',
       'settings' => array(
         'field_permissions' => array(
-          'create' => 0,
-          'edit' => 0,
+          'create' => 'create',
+          'edit' => 'edit',
           'edit own' => 'edit own',
-          'view' => 0,
-          'view own' => 0,
+          'view' => 'view',
+          'view own' => 'view own',
         ),
       ),
       'translatable' => '1',
@@ -199,11 +199,11 @@ function aid_basic_research_program_field_default_fields() {
       'module' => 'text',
       'settings' => array(
         'field_permissions' => array(
-          'create' => 0,
-          'edit' => 0,
+          'create' => 'create',
+          'edit' => 'edit',
           'edit own' => 'edit own',
-          'view' => 0,
-          'view own' => 0,
+          'view' => 'view',
+          'view own' => 'view own',
         ),
       ),
       'translatable' => '1',
