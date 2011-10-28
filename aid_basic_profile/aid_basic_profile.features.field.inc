@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_field_default_fields().
+ * Implementation of hook_field_default_fields().
  */
 function aid_basic_profile_field_default_fields() {
   $fields = array();
@@ -1589,24 +1589,14 @@ function aid_basic_profile_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'addressfield',
-          'settings' => array(
-            'format_handlers' => array(
-              0 => 'address',
-            ),
-            'use_widget_handlers' => 1,
-          ),
+          'settings' => array(),
           'type' => 'addressfield_default',
           'weight' => '25',
         ),
         'full' => array(
           'label' => 'above',
           'module' => 'addressfield',
-          'settings' => array(
-            'format_handlers' => array(
-              0 => 'address',
-            ),
-            'use_widget_handlers' => 1,
-          ),
+          'settings' => array(),
           'type' => 'addressfield_default',
           'weight' => '25',
         ),
@@ -1641,9 +1631,6 @@ function aid_basic_profile_field_default_fields() {
         'module' => 'addressfield',
         'settings' => array(
           'available_countries' => array(),
-          'format_handlers' => array(
-            0 => 'address',
-          ),
           'name_format' => 'name_line_organisation',
         ),
         'type' => 'addressfield_standard',
@@ -2514,24 +2501,14 @@ function aid_basic_profile_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'addressfield',
-          'settings' => array(
-            'format_handlers' => array(
-              0 => 'address',
-            ),
-            'use_widget_handlers' => 1,
-          ),
+          'settings' => array(),
           'type' => 'addressfield_default',
           'weight' => '24',
         ),
         'full' => array(
           'label' => 'above',
           'module' => 'addressfield',
-          'settings' => array(
-            'format_handlers' => array(
-              0 => 'address',
-            ),
-            'use_widget_handlers' => 1,
-          ),
+          'settings' => array(),
           'type' => 'addressfield_default',
           'weight' => '24',
         ),
@@ -2566,9 +2543,6 @@ function aid_basic_profile_field_default_fields() {
         'module' => 'addressfield',
         'settings' => array(
           'available_countries' => array(),
-          'format_handlers' => array(
-            0 => 'address',
-          ),
           'name_format' => 'name_line_organisation',
         ),
         'type' => 'addressfield_standard',

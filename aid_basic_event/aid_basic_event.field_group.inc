@@ -5,13 +5,12 @@
  */
 
 /**
- * Implements hook_field_group_info().
+ * Implementation of hook_field_group_info().
  */
 function aid_basic_event_field_group_info() {
   $export = array();
 
   $field_group = new stdClass;
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_event_associated_content|node|event|form';
   $field_group->group_name = 'group_event_associated_content';
@@ -39,7 +38,6 @@ function aid_basic_event_field_group_info() {
   $export['group_event_associated_content|node|event|form'] = $field_group;
 
   $field_group = new stdClass;
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_event_classification|node|event|form';
   $field_group->group_name = 'group_event_classification';
@@ -70,7 +68,6 @@ function aid_basic_event_field_group_info() {
   $export['group_event_classification|node|event|form'] = $field_group;
 
   $field_group = new stdClass;
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_event_links|node|event|form';
   $field_group->group_name = 'group_event_links';

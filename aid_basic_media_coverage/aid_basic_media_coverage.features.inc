@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_ctools_plugin_api().
+ * Implementation of hook_ctools_plugin_api().
  */
 function aid_basic_media_coverage_ctools_plugin_api() {
   list($module, $api) = func_get_args();
@@ -15,7 +15,7 @@ function aid_basic_media_coverage_ctools_plugin_api() {
 }
 
 /**
- * Implements hook_node_info().
+ * Implementation of hook_node_info().
  */
 function aid_basic_media_coverage_node_info() {
   $items = array(

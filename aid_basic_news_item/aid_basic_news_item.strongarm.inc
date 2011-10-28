@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_strongarm().
+ * Implementation of hook_strongarm().
  */
 function aid_basic_news_item_strongarm() {
   $export = array();
