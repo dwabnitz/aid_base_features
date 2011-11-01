@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function aid_basic_media_coverage_field_default_fields() {
   $fields = array();
@@ -590,6 +590,7 @@ function aid_basic_media_coverage_field_default_fields() {
           'view own' => 0,
         ),
         'title' => 'optional',
+        'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
       ),
@@ -606,7 +607,7 @@ function aid_basic_media_coverage_field_default_fields() {
           'label' => 'above',
           'module' => 'link',
           'settings' => array(),
-          'type' => 'default',
+          'type' => 'link_default',
           'weight' => 2,
         ),
         'teaser' => array(
@@ -631,9 +632,11 @@ function aid_basic_media_coverage_field_default_fields() {
         ),
         'enable_tokens' => 0,
         'title' => 'optional',
+        'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
         'user_register_form' => FALSE,
+        'validate_url' => 1,
       ),
       'widget' => array(
         'active' => 0,

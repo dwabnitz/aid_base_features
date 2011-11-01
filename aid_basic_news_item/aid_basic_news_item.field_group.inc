@@ -5,12 +5,13 @@
  */
 
 /**
- * Implementation of hook_field_group_info().
+ * Implements hook_field_group_info().
  */
 function aid_basic_news_item_field_group_info() {
   $export = array();
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_news_item_assoc_content|node|news_item|form';
   $field_group->group_name = 'group_news_item_assoc_content';
@@ -38,6 +39,7 @@ function aid_basic_news_item_field_group_info() {
   $export['group_news_item_assoc_content|node|news_item|form'] = $field_group;
 
   $field_group = new stdClass;
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_news_item_classification|node|news_item|form';
   $field_group->group_name = 'group_news_item_classification';

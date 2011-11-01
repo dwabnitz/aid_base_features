@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function aid_basic_project_field_default_fields() {
   $fields = array();
@@ -142,7 +142,7 @@ function aid_basic_project_field_default_fields() {
             'multiple_to' => '',
             'show_repeat_rule' => 'show',
           ),
-          'type' => 'date_year_only',
+          'type' => 'date_default',
           'weight' => '31',
         ),
         'teaser' => array(
